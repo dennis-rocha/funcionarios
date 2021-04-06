@@ -20,35 +20,29 @@ with open('funcionario.json', 'r') as json_file:
     group=df_full[['nome_completo','salario']]
     salario=df_full.salario
     temp=0
-    df={} #def_max={}
-    #df_min={}
+    df_max={}
+    df_min={}
 
     #4- FUNÇÃO PARA CONFERIR E SALVAR O MAIOR SALARIO E O NOME AND SALVAR SALARIOS IGUAIS
     for i in range(len(df_full)):
         if temp<=salario[i]: #CONFERE SE SALARIO É MAIOR OU IGUAL A TEMP
-            if temp != salario[i] or temp == salario[i]: #VERIFICA SE TEMP É DIFERENTE OU IGUAL A SALARIO
+            if temp != salario[i]: #VERIFICA SE TEMP É DIFERENTE AO SALARIO
+                temp=salario[i]
+                df_max.clear() #LIMPA O DF_MAX SE ELE FOR DIFERENTE E ENTRA NO PROXIMO IF E SALVA O SALARIO
+
+            if temp == salario[i]:
                 temp=salario[i]
                 df_list=list(group.iloc[i])
-                df[df_list[0]]=df_list[1] #GERA UMA DICT COM NOME:SALARIO
-        """
-No final da execução do for terá um temp com o valor máximo
-     for rows in range(len(df_full)):
-        if temp>=salário[rows]:
-             if temp != salario[i] or temp == salario[i]:
-             temp=salario[rows]
-             df_list=list(group.iloc[rows])
-             df_min[df_list[0]]=df_list[1]
-        """
+                df_max[df_list[0]]=df_list[1] #GERA UMA DICT COM NOME:SALARIO
+                #No final da execução do for terá um temp com o valor máximo
+    
+    for rows in range(len(df_full)): #SEGUE A MESMA LÓGICA QUE PARA O SALARIO MÁXIMO
+        if temp>=salario[rows]:
+            if temp != salario[rows]:
+                temp=salario[rows]
+                df_min.clear()
 
-    """
-    pega o salario maximo
-    temp=0
-    for i in range(len(df_full)):
-    ...:     if temp<=salario[i]:
-    ...:         temp=salario[i]
-    ...:         print(temp)
-
-    pega o valor maximo e printa nome e salario maximo
-    print(df_full[['nome_completo','salario']].max())
-    """
-
+            if temp == salario[rows]:
+                temp=salario[rows]
+                df_list=list(group.iloc[rows])
+                df_min[df_list[0]]=df_list[1]
