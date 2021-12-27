@@ -1,0 +1,15 @@
+3. Área(s) com o maior e menor número de funcionários 
+Calcular e imprimir as áreas com o maior e menor número de funcionários. Em caso de empate (mais de uma área com o mesmo número máximo ou mínimo de funcionários), todas as áreas dentro daquele critério devem ser impressas.
+
+Formato (área(s) com o maior número de funcionários):
+
+most_employees|<nome da área>|<número de funcionários>
+Formato (área(s) com o menor número de funcionários)
+
+least_employees|<nome da área>|<número de funcionários>
+Exemplos:
+
+least_employees|Gerenciamento de Software|2
+least_employees|Limpeza|2
+most_employees|Recursos Humanos|30
+most_employees|Engenharia|30

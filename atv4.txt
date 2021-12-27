@@ -1,0 +1,10 @@
+4. Maiores salários para funcionários com o mesmo sobrenome 
+Para cada sobrenome com mais de um funcionário, listar o(s) funcionário(s) que recebem o maior salário. Assim como nos itens anteriores, se mais de um funcionário com o mesmo sobrenome tiver o maior salário, listar todos estes.
+
+Formato:
+
+last_name_max|<sobrenome do funcionário>|<nome completo>|<salário>
+Exemplo:
+
+last_name_max|Farias|Cleverton Farias|2750.00
+last_name_max|Farias|Paulo César|2750.00

@@ -1,0 +1,36 @@
+2. Quem mais recebe e quem menos recebe em cada área e a média salarial em cada área.
+
+Calcular e imprimir o nome completo do(s) funcionário(s) com o(s) maior(es) e menor(res) salário(s) por área da empresa empresa, bem como o salário médio (também por área). Em caso de empate (mais de um funcionário nas posições de maior ou menor salário em uma determinada área), imprimir todos os funcionários nessas posições que tem o mesmo salário, em cada área.
+-------------------------------------------------------------
+
+Formato (máximo)
+area_max|<nome da área>|<nome completo>|<salário máximo>
+-------------------------------------------------------------
+
+Formato (mínimo)
+area_min|<nome da área>|<nome completo>|<salário>
+-------------------------------------------------------------
+
+Formato (média)
+area_avg|<nome da área>|<salário médio>
+-------------------------------------------------------------
+
+Exemplo:
+
+area_max|Gerenciamento de Software|Bernardo Costa|3700.00
+area_max|Gerenciamento de Software|Richie Rich|3700.00
+area_max|Recrutamento|Hugh Hefner|3700.00
+area_min|Gerenciamento de Software|Marcelo Souza|1200.00
+area_min|Gerenciamento de Software|João Lenão|1200.00
+area_avg|Gerenciamento de Software|3450.00
+area_avg|Recrutamento|3000.00
+
+
+ id        nome     sobrenome  salario area       nome_completo novo_campo
+2    2      Sergio      Pinheiro   2450.0   SD     Sergio Pinheiro     dennis
+7    7    Fernando         Ramos   2450.0   SD      Fernando Ramos     dennis
+10  10   Clederson      Oliveira   2500.0   SD  Clederson Oliveira     dennis
+5    5      Abraão        Campos   2550.0   SD       Abraão Campos     dennis
+4    4   Cleverton        Farias   2750.0   SD    Cleverton Farias     dennis
+9    9       Fabio         Souza   2750.0   SD         Fabio Souza     dennis
+11  11       Teste  que_eu_criei   3700.0   SD  Teste que_eu_criei     dennis
