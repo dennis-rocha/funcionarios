@@ -151,8 +151,3 @@ with open('funcionario.json', 'r') as json_file:
         show_data(list_salario(df_temp_lastname.get_group(name), ascending=False) , name='last_name_max', columns=['sobrenome','nome_completo','salario'])
     
     #FIM DA ATIVIDADE
-<<<<<<< HEAD
-   
-=======
-   
->>>>>>> 2378732fe17aa2c6bf59aac49820e7f126fa4c44
